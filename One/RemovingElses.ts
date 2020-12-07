@@ -1,3 +1,4 @@
+/* 1 Entirely unnecessary else blocks */
 /* 
   This is perhaps one of those junior developers are most guilty of. 
   The example below is a prime illustration of what happens when you get beaten 
