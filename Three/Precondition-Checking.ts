@@ -1,3 +1,4 @@
+import ArgumentException from '../Argument-Exception'
 /* 
   Most often, I find that it won’t make sense to continue executing a method 
   if it’s provided with invalid values.
@@ -30,7 +31,7 @@ const DetermineGenderWithoutPreconditionChecking = (input: number) => {
 
 */
 const DetermineGenderWithPreconditionChecking = (input: number) => {
-  if (input < 0 || input > 1) throw new ArgumentException()
+  if (input < 0 || input > 1) throw new ArgumentException('It was provided a invalid value, try on 0 or 1')
 
   return input === 0 ? "Woman" : "Man"
 }
